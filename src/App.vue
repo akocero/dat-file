@@ -1,22 +1,15 @@
-<script setup></script>
-
 <template>
 	<div>
 		<h1>Dat File Converter</h1>
+		<input type="file" @change="onSelectedFile" />
 	</div>
 </template>
 
-<style scoped>
-.logo {
-	height: 6em;
-	padding: 1.5em;
-	will-change: filter;
-	transition: filter 300ms;
-}
-.logo:hover {
-	filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-	filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<script setup>
+// 1. get the file from input
+// 2. console log filename
+
+const onSelectedFile = (e) => {
+	console.log(e.target.files[0]);
+};
+</script>

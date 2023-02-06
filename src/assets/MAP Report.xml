@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CrystalReport xmlns="urn:crystal-reports:schemas:report-detail"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:crystal-reports:schemas:report-detail http://www.businessobjects.com/products/xml/CR2008Schema.xsd">
+<ReportHeader>
+<Section SectionNumber="0">
+<Text Name="Text2"><TextValue>TIN: 008-290-765-0000</TextValue>
+</Text>
+<Text Name="Text3"><TextValue>BIR FORM
+MONTHLY ALPHALIST OF PAYEES (MAP)
+FOR THE MONTH OF JANUARY 2022</TextValue>
+</Text>
+<Text Name="Text5"><TextValue>WITHHOLDING AGENT&apos;S NAME: MACROLOGIC DIVERSIFIED TECHNOLOGIES INC.</TextValue>
+</Text>
+</Section>
+</ReportHeader>
+<Group Level="1">
+<Group Level="2">
+<GroupFooter>
+<Section SectionNumber="0">
+<Field Name="RecordNumber2" FieldName="RecordNumber"><FormattedValue>1</FormattedValue><Value>1</Value></Field>
+<Field Name="tin2" FieldName="{usp_SSSI_BIR_MAP.tin}"><FormattedValue>158-108-495-000</FormattedValue><Value>158-108-495-000</Value></Field>
+<Field Name="wtcode2" FieldName="{@wtcode}"><FormattedValue>WI050</FormattedValue><Value>WI050</Value></Field>
+<Field Name="WTName2" FieldName="{usp_SSSI_BIR_MAP.WTName}"><FormattedValue>WI050 - 10% management and technical consultants</FormattedValue><Value>WI050 - 10% management and technical consultants</Value></Field>
+<Field Name="Rate2" FieldName="{usp_SSSI_BIR_MAP.Rate}"><FormattedValue>10.00</FormattedValue><Value>10.00</Value></Field>
+<Field Name="vendname3" FieldName="{usp_SSSI_BIR_MAP.vendname}"><FormattedValue>Elayda Jr., Hortencio</FormattedValue><Value>Elayda Jr., Hortencio</Value></Field>
+<Field Name="Sumoftaxamt2" FieldName="Sum ({usp_SSSI_BIR_MAP.taxamt}, {usp_SSSI_BIR_MAP.wtcode})"><FormattedValue>5,555.56</FormattedValue><Value>5555.56</Value></Field>
+<Field Name="Sumoftaxableamt2" FieldName="Sum ({usp_SSSI_BIR_MAP.taxableamt}, {usp_SSSI_BIR_MAP.wtcode})"><FormattedValue>55,555.56</FormattedValue><Value>55555.56</Value></Field>
+</Section>
+</GroupFooter>
+</Group>
+</Group>
+<Group Level="1">
+<Group Level="2">
+<GroupFooter>
+<Section SectionNumber="0">
+<Field Name="RecordNumber2" FieldName="RecordNumber"><FormattedValue>3</FormattedValue><Value>3</Value></Field>
+<Field Name="tin2" FieldName="{usp_SSSI_BIR_MAP.tin}"><FormattedValue>000-477-863-000</FormattedValue><Value>000-477-863-000</Value></Field>
+<Field Name="wtcode2" FieldName="{@wtcode}"><FormattedValue>WC160</FormattedValue><Value>WC160</Value></Field>
+<Field Name="WTName2" FieldName="{usp_SSSI_BIR_MAP.WTName}"><FormattedValue>WC160 - 2% top 10,000 P.Corp supplier of services</FormattedValue><Value>WC160 - 2% top 10,000 P.Corp supplier of services</Value></Field>
+<Field Name="Rate2" FieldName="{usp_SSSI_BIR_MAP.Rate}"><FormattedValue>2.00</FormattedValue><Value>2.00</Value></Field>
+<Field Name="vendname3" FieldName="{usp_SSSI_BIR_MAP.vendname}"><FormattedValue>METROBANK</FormattedValue><Value>METROBANK</Value></Field>
+<Field Name="Sumoftaxamt2" FieldName="Sum ({usp_SSSI_BIR_MAP.taxamt}, {usp_SSSI_BIR_MAP.wtcode})"><FormattedValue>2,687.87</FormattedValue><Value>2687.87</Value></Field>
+<Field Name="Sumoftaxableamt2" FieldName="Sum ({usp_SSSI_BIR_MAP.taxableamt}, {usp_SSSI_BIR_MAP.wtcode})"><FormattedValue>134,393.52</FormattedValue><Value>134393.52</Value></Field>
+</Section>
+</GroupFooter>
+</Group>
+</Group>
+<Group Level="1">
+<Group Level="2">
+<GroupFooter>
+<Section SectionNumber="0">
+<Field Name="RecordNumber2" FieldName="RecordNumber"><FormattedValue>4</FormattedValue><Value>4</Value></Field>
+<Field Name="tin2" FieldName="{usp_SSSI_BIR_MAP.tin}"><FormattedValue>200-833-967-000</FormattedValue><Value>200-833-967-000</Value></Field>
+<Field Name="wtcode2" FieldName="{@wtcode}"><FormattedValue>WC158</FormattedValue><Value>WC158</Value></Field>
+<Field Name="WTName2" FieldName="{usp_SSSI_BIR_MAP.WTName}"><FormattedValue>WC158 - 1% top 10,000 P.Corp supplier of goods</FormattedValue><Value>WC158 - 1% top 10,000 P.Corp supplier of goods</Value></Field>
+<Field Name="Rate2" FieldName="{usp_SSSI_BIR_MAP.Rate}"><FormattedValue>1.00</FormattedValue><Value>1.00</Value></Field>
+<Field Name="vendname3" FieldName="{usp_SSSI_BIR_MAP.vendname}"><FormattedValue>VSTECS Phils. Inc.</FormattedValue><Value>VSTECS Phils. Inc.</Value></Field>
+<Field Name="Sumoftaxamt2" FieldName="Sum ({usp_SSSI_BIR_MAP.taxamt}, {usp_SSSI_BIR_MAP.wtcode})"><FormattedValue>16,071.43</FormattedValue><Value>16071.43</Value></Field>
+<Field Name="Sumoftaxableamt2" FieldName="Sum ({usp_SSSI_BIR_MAP.taxableamt}, {usp_SSSI_BIR_MAP.wtcode})"><FormattedValue>1,607,142.86</FormattedValue><Value>1607142.86</Value></Field>
+</Section>
+</GroupFooter>
+</Group>
+</Group>
+<ReportFooter>
+<Section SectionNumber="0">
+<Text Name="Text17"><TextValue>Grand Total</TextValue>
+</Text>
+<Text Name="Text18"><TextValue>END OF REPORT</TextValue>
+</Text>
+<Text Name="Text1"><TextValue>		I declare under the penalties of perjury, that this has been made in good faith, verified by me, and to the best of my knowledge and belief, is true and correct persuant to the provisions of the NIRC, and the regulations issued under the authority thereof; that the information contained herein completely reflects all income payments with the corresponding taxes withheld from payees are duly remitted to the BIR and proper Certificates of Creditable Withholding Tax at Source (BIR Form No. 2307) have been issued to payees; that, the information appearing herein shall be consistent with the total amount remitted and that inconsistent information shall result to denial of the claims for expenses.</TextValue>
+</Text>
+<Text Name="Text4"><TextValue>_______________________
+Signature over printed name</TextValue>
+</Text>
+<Field Name="Sumoftaxableamt1" FieldName="Sum ({usp_SSSI_BIR_MAP.taxableamt})"><FormattedValue>1,797,091.94</FormattedValue><Value>1797091.94</Value></Field>
+<Field Name="Sumoftaxamt1" FieldName="Sum ({usp_SSSI_BIR_MAP.taxamt})"><FormattedValue>24,314.86</FormattedValue><Value>24314.86</Value></Field>
+</Section>
+</ReportFooter>
+</CrystalReport>
