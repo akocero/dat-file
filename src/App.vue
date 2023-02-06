@@ -13,30 +13,32 @@
 // 1. get the file from input
 // 2. console log filename
 import { onMounted, ref } from 'vue';
-const rawXML = ref('');
+const rawXML = ref('rawXML');
+
+const xmlPath = ref('src/assets/');
+
 const onSelectedFile = (e) => {
 	console.log(e.target.files[0]);
 };
 
-onMounted(() => {
-	fetchXML();
+onMounted(async () => {
+	const data = await getXMLData();
+	convertXMLtoJSON(data);
 });
 
-const fetchXML = async () => {
-	const xml = await fetch('src/assets/Book.xml');
+async function getXMLData() {
+	const xml = await fetch(xmlPath.value + 'Book.xml');
 	const data = await xml.text();
-	console.log({ data });
 
-	let _rawXML = xmlValue(data);
-	console.log(_rawXML);
-	// console.log();
+	let parser = new DOMParser(),
+		xmlDoc = parser.parseFromString(data, 'text/xml');
 
-	const _books = _rawXML.getElementsByTagName('book');
+	return xmlDoc;
+}
 
-	console.log(typeof _books);
-
+function convertXMLtoJSON(xml) {
 	let books = [];
-	for (let item of _books) {
+	for (let item of xml.getElementsByTagName('book')) {
 		const _item = {
 			author: item.children[0].innerHTML,
 			title: item.children[2].innerHTML
@@ -46,12 +48,5 @@ const fetchXML = async () => {
 	}
 
 	console.log(books);
-};
-
-const xmlValue = (data) => {
-	let parser = new DOMParser(),
-		xmlDoc = parser.parseFromString(data, 'text/xml');
-
-	return xmlDoc;
-};
+}
 </script>
